@@ -9,6 +9,7 @@ through our architecture.
 This is a Proof of Concept for auto generating a Lens for User defined Java Objects;
 the proof of concept should work regardless of if the Object is simple (only containing
 types provided by Java/a library) or complex (containing other user defined objects).
+The generation is driven off of Annotations.
 
 Lens's allow us to get and set values in an object without the caller having to know the
 details about the internal structure of that object; we can therefore treat our POJOs as
