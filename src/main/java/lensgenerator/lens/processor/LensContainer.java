@@ -9,7 +9,7 @@ public class LensContainer {
     Map<String, Lens> x; // todo ????
     Class clazz;
 
-    public void setClazz(Class clazz) {
+    void setClazz(Class clazz) {
         this.clazz = clazz;
     }
 
@@ -21,11 +21,11 @@ public class LensContainer {
         return x;
     }
 
-    public void setX(Map<String, Lens> x) {
+    void setX(Map<String, Lens> x) {
         this.x = x;
     }
 
-    public Lens getFieldLens(String field) {
+    private Lens getFieldLens(String field) {
         return x.get(field);
     }
 
